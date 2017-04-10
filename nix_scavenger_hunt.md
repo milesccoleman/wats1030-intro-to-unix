@@ -4,14 +4,14 @@
 
 * Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. 
 
-*/home/cabox/workspace                                                                                                                                                
-cabox@box-codeanywhere:~/workspace$*
+**/home/cabox/workspace                                                                                                                                                
+cabox@box-codeanywhere:~/workspace$**
 
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *LICENSE  README.md  challenge_files  nix_scavenger_hunt.md  nix_scavenger_hunt_stretch.md  super_scavengers.md*                                                     
 
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory.*
 
-*total 40K                                                                                                                                                         
+**total 40K                                                                                                                                                         
 drwxrwxr-x 4 cabox cabox 4.0K Apr  9 23:18 .                                                                                                                         
 drwxr-xr-x 9 cabox cabox 4.0K Apr  9 23:18 ..                                                                                                                        
 drwxrwxr-x 8 cabox cabox 4.0K Apr  9 23:18 .git                                                                                                                      
@@ -20,53 +20,49 @@ drwxrwxr-x 8 cabox cabox 4.0K Apr  9 23:18 .git
 drwxrwxr-x 7 cabox cabox 4.0K Apr  9 23:18 challenge_files                                                                                                           
 -rw-rw-r-- 1 cabox cabox 5.5K Apr  9 23:18 nix_scavenger_hunt.md                                                                                                     
 -rw-rw-r-- 1 cabox cabox  317 Apr  9 23:18 nix_scavenger_hunt_stretch.md                                                                                             
--rw-rw-r-- 1 cabox cabox  191 Apr  9 23:18 super_scavengers.md*
+-rw-rw-r-- 1 cabox cabox  191 Apr  9 23:18 super_scavengers.md**
 
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://linux.die.net/man/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. 
 
-* -a, --all
+**-a, --all
       do not hide entries starting with .
  -l   use a long listing format
  -h,  --human-readable
       print sizes in human readable format (e.g., 1K 234M
-      2G)*
+      2G)**
               
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. 
 
-*bin  boot  dev  etc  fastboot  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var                                                     
-*
+**bin  boot  dev  etc  fastboot  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var**                                                    
 
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) 
 
-*/*
+**/**
 
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. 
 
-*/home/cabox                                                                                                                                                          
-*
+**/home/cabox**                                                                                                                                                          
 
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. 
 
-*3: 2015_special_stuff.demo  cloaked-wookie.demo  scooter-double-mamba.demo                                                                                              
-*
+**3: 2015_special_stuff.demo  cloaked-wookie.demo  scooter-double-mamba.demo**                                                                                              
 
 * Use the `cd` command to move "up" one directory. 
 
-*/home/cabox                                                                                                                                                          
-*
+**/home/cabox**                                                                                                                                                          
 
 * Press the up arrow on your keyboard. 
 
-*I got the pwd command.*
+**I got the pwd command.**
 
 * Press the up arrow a few more times. 
 
-*I got ls and cd commands.*
+**I got ls and cd commands.**
 
 * Run the `history` command. 
 
-*    8  cd /                                                                                                                                                          
-    9  pwd                                                                                                                                                           
+**  8  cd /                                                                                                                                                          
+   9  pwd                                                                                                                                                           
    10  cd /                                                                                                                                                          
    11  pwd                                                                                                                                                           
    12  cd                                                                                                                                                            
@@ -108,26 +104,25 @@ drwxrwxr-x 7 cabox cabox 4.0K Apr  9 23:18 challenge_files
    48  pwd                                                                                                                                                           
    49  cd                                                                                                                                                            
    50  ls                                                                                                                                                            
-   51  history *
+   51  history**
 
 ### Observing the System
 
 * Discover what account you are logged into using the `whoami` command. 
 
-*cabox*
+**cabox**
 
 * Discover who else is on your system with the `who` command. 
 
-*No, just me.*
+**No, just me.**
 
 * How long has your system been running? Use `uptime` to see, and 
 
-*cabox    pts/0        Apr  9 23:20 (54.69.152.243)                                                                                                                   
-*
+**cabox    pts/0        Apr  9 23:20 (54.69.152.243)**                                                                                                                   
 
-* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) 
+Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) 
 
-*USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND                                                                                             
+**USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND                                                                                             
 root         1  0.0  0.4  33196  2584 ?        Ss   23:17   0:00 init                                                                                                
 root         2  0.0  0.0      0     0 ?        S    23:17   0:00 [kthreadd/109251]                                                                                   
 root         3  0.0  0.0      0     0 ?        S    23:17   0:00 [khelper/1092516]                                                                                   
@@ -144,53 +139,50 @@ cabox      483  0.0  0.2  63876  1472 ?        S    23:19   0:00 sshd: cabox@pts
 cabox      484  0.0  1.0  21480  5412 pts/0    Ss   23:19   0:00 -bash                                                                                               
 cabox      698  0.0  0.2  15520  1148 pts/0    R+   23:59   0:00 ps aux
 
-Looks like it's giving me a run down of all the processes run in the dev box.*
+Looks like it's giving me a run down of all the processes run in the dev box.**
 
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) 
 
-*Looks like it's giving me a run down of my use of the system.*
+**Looks like it's giving me a run down of my use of the system.**
 
 ### Finding and Viewing Files
 
-* Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. 
+Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. 
 
-*2: credit_cards.txt  credit_cards2.txt                                                                                                                                  
-*
+**2: credit_cards.txt  credit_cards2.txt**                                                                                                                                  
 
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) 
 
-*01-15-2015 *
+**01-15-2015**
 
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. 
 
-*./challenge_files/tmp/modi_laboriosam.txt                                                                                                                            
-*
+**./challenge_files/tmp/modi_laboriosam.txt**                                                                                                                            
 
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). 
 
-*2: Britt-Erdman.user
-Lissie-Strosin.user*
+**2: Britt-Erdman.user
+Lissie-Strosin.user**
 
 * Use the `-r` option of `grep` to *recursively* find the text "Waldo" hidden in a file somewhere under the `challenge_files` directory. 
 
-*./challenge_files/serial-numbers/eaque_molestiae.txt:4:Ut est maiores quia autem. Nisi modi Waldo sed corporis sit explicabo ut est. Et est placeat ea sunt sunt cons
-*
+**./challenge_files/serial-numbers/eaque_molestiae.txt:4:Ut est maiores quia autem. Nisi modi Waldo sed corporis sit explicabo ut est. Et est placeat ea sunt sunt cons**
 
 ### Pipes and Connecting Commands
 
 * Sometimes it's useful to output the results of a command to a text file for further analysis, reference, or processing. Try running `ls > files.txt`. Notice that the file `files.txt` was created. View that file using `more`. 
 
-*LICENSE                                                                                                                                                              
+**LICENSE                                                                                                                                                              
 README.md                                                                                                                                                            
 challenge_files                                                                                                                                                      
 files.txt                                                                                                                                                            
 nix_scavenger_hunt.md                                                                                                                                                
 nix_scavenger_hunt_stretch.md                                                                                                                                        
-super_scavengers.md              *
+super_scavengers.md**
 
 * Notice that if you run `ls -alh` in the `challenge_files` directory, the files scroll by very quickly. Sometimes it would be better to get the results in a paginated format. Try running `ls -alh | more`. 
 
-*
+**
 -rw-rw-r-- 1 cabox cabox   91 Apr  9 23:18 Kirstin-Hoppe.user                                                                                                        
 -rw-rw-r-- 1 cabox cabox   93 Apr  9 23:18 Kwame-Schmitt.user                                                                                                        
 -rw-rw-r-- 1 cabox cabox   78 Apr  9 23:18 Ladonna-Lueilwitz.user                                                                                                    
@@ -235,13 +227,13 @@ super_scavengers.md              *
 drwxrwxr-x 2 cabox cabox 4.0K Apr  9 23:18 serial-numbers                                                                                                            
 drwxrwxr-x 2 cabox cabox 4.0K Apr  9 23:18 test2                                                                                                                     
 drwxrwxr-x 2 cabox cabox 4.0K Apr  9 23:18 tmp                                                                                                                       
-drwxrwxr-x 2 cabox cabox 4.0K Apr  9 23:18 wow     *
+drwxrwxr-x 2 cabox cabox 4.0K Apr  9 23:18 wow     **
 
 * Earlier, when you viewed the list of active processes on your devbox using `ps aux`, the list was probably really long. You can make this list more manageable by using the pipe (`|`) to filter the results of `ps` using `grep`. Run `ps aux | grep <your_username>` to see what processes are running for your specific user. 
 
-*cabox@box-codeanywhere:~/workspace/challenge_files$  ps aux | grep cabox                                                                                             
+**cabox@box-codeanywhere:~/workspace/challenge_files$  ps aux | grep cabox                                                                                             
 root      1355  0.0  0.6  63876  3456 ?        Ss   00:36   0:00 sshd: cabox [priv]                                                                                  
 cabox     1357  0.0  0.2  63876  1468 ?        S    00:36   0:00 sshd: cabox@pts/0                                                                                   
 cabox     1358  0.0  1.0  21544  5484 pts/0    Ss   00:36   0:00 -bash                                                                                               
 cabox     1571  0.0  0.2  15520  1144 pts/0    R+   00:56   0:00 ps aux                                                                                              
-cabox     1572  0.0  0.1   8816   752 pts/0    S+   00:56   0:00 grep --color=auto cabox   *
+cabox     1572  0.0  0.1   8816   752 pts/0    S+   00:56   0:00 grep --color=auto cabox**
